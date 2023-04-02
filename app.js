@@ -28,16 +28,36 @@ function leavehometo(url){
     }, 1000);
 }
 
-var second = document.getElementById("secondd");
+var secondd = document.getElementById("secondd");
 
 function leaveaboutto(url){
     wide.style.top = "-50vh";
     short.style.top = "-50vh";
     meni.style.top = "-50vh";
-    second.style.top = "-50vh";
 
     setTimeout(() => {
         window.location.href = url;
     }, 1000);
 }
+
+function leaveskillsto(url){
+    wide.style.top = "-50vh";
+    short.style.top = "-50vh";
+    meni.style.top = "-50vh";
+
+    setTimeout(() => {
+        window.location.href = url;
+    }, 1000);
+}
+
+function leavecontactto(url){
+    wide.style.top = "-50vh";
+    short.style.top = "-50vh";
+    meni.style.top = "-50vh";
+
+    setTimeout(() => {
+        window.location.href = url;
+    }, 1000);
+}
+
 
