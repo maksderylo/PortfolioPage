@@ -1,0 +1,104 @@
+#start{
+    top: 0px;
+    width: 100%;
+    height: min(1000px,120vw);
+    min-height: 550px;
+}
+  
+  #emptyfornav{
+    height: calc(200px + 3vw);
+  }
+  
+  #fronttext{
+    position: relative;
+    margin: auto;
+    width: min(100vw,1400px);
+  }
+  
+  svg{
+    z-index: 5;
+    color: gold;
+    height: min(100px,10vw);
+  }
+  
+  #star1{
+    position: absolute;
+    animation: fadeInStar1 ease 1.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  #star2{
+    position: absolute;
+    animation: fadeInStar2 ease 1.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  
+  }
+  
+  @keyframes fadeInStar1 {
+    0% {
+        opacity: 0;
+        bottom: -80px;
+        left: -60px;
+    }
+    100% {
+        bottom: 0px;
+        left: 0px;
+        opacity: 1;
+     }
+  }
+  @keyframes fadeInStar2 {
+    0% {
+        opacity: 0;
+        right: 0px;
+        top: 80px;
+    }
+    100% {
+        top: 0px;
+        right: 30px;
+        opacity: 1;
+     }
+  }
+  
+  
+@font-face {
+  font-family: 'regular';
+  src: url(fonts/Acorn-Regular.ttf);
+}
+@font-face {
+  font-family: 'light';
+  src: url(fonts/Acorn-Light.ttf);
+}
+@font-face {
+  font-family: 'semi';
+  src: url(fonts/Acorn-SemiBold.ttf);
+}
+  
+ #start h2{
+    z-index: 4;
+    font-family: 'regular', sans-serif;
+    font-size: min(11.5vw, 150px);
+    color: #3cdfff;
+    text-shadow: 10px 10px black;
+    transform: translateY(-2rem);
+    animation: fadein 0.5s ease 0s forwards;
+  }
+  @keyframes fadein{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+  .spacesmall{
+    height: 50px;
+  }
+  
+  #start h1{
+    font-size: max(1vw, 20px);
+    color: white;
+    opacity: 0;
+    text-shadow: 5px 5px 5px black;
+    transform: translateY(-3rem);
+    animation: fadein 0.5s ease 0.1s forwards;
+  }
