@@ -14,7 +14,9 @@
                 transform 0.3s ease-in-out;
 }
 
-
+::selection{
+  background-color: #06d6a0;
+}
 
 .cursor-dot {
   z-index: 100000;
