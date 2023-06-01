@@ -1,4 +1,4 @@
-#work{
+#firsthalf, #secondhalf{
     margin: auto;
     max-width: 1400px;
     min-height: 900px;
@@ -330,12 +330,11 @@
     font-weight: bold;
 }
 
-#box5{
+#worktitleclass{
     width: 100%;
-    height: 200px;
 }
 
-#box5 h1{
+#worktitle{
     float: left;
     font-family: 'regular', sans-serif;
     font-size: min(6vw, 100px);
@@ -343,5 +342,5 @@
     text-shadow: 10px 10px black;
     transform: translateY(-2rem);
     animation: fadein 0.5s ease 0s forwards;
+    margin-bottom: 50px;
 }
-
