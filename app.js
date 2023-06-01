@@ -214,9 +214,23 @@ var observer2 = new IntersectionObserver(function(entries) { console.log(entries
 	
 },{ threshold: [0.5]});
 
+var observer25 = new IntersectionObserver(function(entries) { console.log(entries);
+	if(entries[0]['isIntersecting'] > 0.5) {
+		podtext.style.marginLeft="103px";
+        podtext.style.width="50px";
+        nstart.style.color="grey";
+        nwork.style.color="white";
+        nabout.style.color="grey";
+        ncontact.style.color="grey";
+		//work secondhalf
+
+	}
+	
+},{ threshold: [0.5]});
+
 
 var observer3 = new IntersectionObserver(function(entries) { console.log(entries);
-	if(entries[0]['isIntersecting'] > 0.5) {
+	if(entries[0]['isIntersecting'] > 0.7) {
 		podtext.style.marginLeft="190px";
         podtext.style.width="57px";
         nstart.style.color="grey";
@@ -226,7 +240,7 @@ var observer3 = new IntersectionObserver(function(entries) { console.log(entries
 		//about
 	}
 	
-},{ threshold: [0.5]});
+},{ threshold: [0.7]});
 
 var observer4 = new IntersectionObserver(function(entries) { console.log(entries);
 	if(entries[0]['isIntersecting'] > 0.5) {
@@ -242,7 +256,8 @@ var observer4 = new IntersectionObserver(function(entries) { console.log(entries
 },{ threshold: [0.5]});
 
 observer1.observe(document.querySelector("#start"));
-observer2.observe(document.querySelector("#work"));
+observer2.observe(document.querySelector("#firsthalf"));
+observer25.observe(document.querySelector("#secondhalf"));
 observer3.observe(document.querySelector("#about"));
 observer4.observe(document.querySelector("#contact"));
 
@@ -264,5 +279,7 @@ function scrollcontact() {
 
 
 //apear animations
+
+
 
 
