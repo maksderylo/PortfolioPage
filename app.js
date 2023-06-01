@@ -215,7 +215,7 @@ var observer2 = new IntersectionObserver(function(entries) { console.log(entries
 },{ threshold: [0.5]});
 
 var observer25 = new IntersectionObserver(function(entries) { console.log(entries);
-	if(entries[0]['isIntersecting'] > 0.5) {
+	if(entries[0]['isIntersecting'] > 0.3) {
 		podtext.style.marginLeft="103px";
         podtext.style.width="50px";
         nstart.style.color="grey";
@@ -226,7 +226,7 @@ var observer25 = new IntersectionObserver(function(entries) { console.log(entrie
 
 	}
 	
-},{ threshold: [0.5]});
+},{ threshold: [0.3]});
 
 
 var observer3 = new IntersectionObserver(function(entries) { console.log(entries);
